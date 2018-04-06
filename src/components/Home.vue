@@ -90,7 +90,7 @@ export default {
     })
   },
   beforeMount () {
-    this.$store.state.global = 555
+    this.$store.state.global.test_param = 'Send this param to another vue-component'
     this.$store.dispatch('REQUEST_API', {
       method: 'get',
       url: '_request.php',

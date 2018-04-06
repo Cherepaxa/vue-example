@@ -1,8 +1,6 @@
 import {api, axiosDefault as axios} from 'create-api'
 import config from './../config'
 import querystring from 'querystring'
-// var querystring = require('querystring')
-// import utils from './../core/utils'
 
 export function fetchApi (req) {
   const QUERY_PATH = (req.method === 'get') ? '?' + Object.entries(req.props).map((pair) => pair.map(encodeURIComponent).join('=')).join('&') : ''

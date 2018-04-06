@@ -8,7 +8,7 @@ export default {
     // console.log(222222222222222)
   },
   mounted () {
-    console.log(this.$store.state.global)
+    console.log(this.$store.state.global.test_param)
   }
 }
 </script>
