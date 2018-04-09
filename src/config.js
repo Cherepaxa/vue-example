@@ -6,7 +6,10 @@ const config = {
     api: {
       requests: {
         get: 'http://getmodel.com',
-        post: 'http://getmodel.com'
+        post: 'http://getmodel.com',
+        tests: {
+          get: '_request.php'
+        }
       }
     }
   },

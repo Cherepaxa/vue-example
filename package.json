@@ -7,7 +7,7 @@
     "start": "cross-env NODE_ENV=production node server",
     "build": "rimraf dist && npm run build:client && npm run build:server",
     "lint": "eslint --ext .js,.vue src",
-    "tests": "jest",
+    "tests": "NODE_ENV=development jest",
     "build:client": "cross-env NODE_ENV=production webpack --mode production --config build/webpack.client.config.js --progress",
     "build:server": "cross-env NODE_ENV=production webpack --mode production --config build/webpack.server.config.js --progress"
   },
